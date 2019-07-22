@@ -4,6 +4,10 @@ Potential outlines for models and paths in Sinatra CRUD app.
 
 ## User model
 
+User
+- has_many homebrews
+- has_many tastings through homebrews?
+
 User should have:
 - username - string
 - email - string
@@ -21,6 +25,11 @@ User should have:
 | DELETE  | '/users/:id'       | delete action | deletes one user based on ID in the url           |
 
 ## Homebrew model
+
+Homebrew
+- belongs_to User
+- has_many tastings?
+
 
 Homebrew should have:
 - name - string
@@ -48,6 +57,9 @@ Homebrew should have:
 | DELETE  | '/homebrews/:id'       | delete action | deletes one homebrew based on ID in the url           |
 
 ## Tasting model
+
+Tasting
+- belongs_to Homebrew?
 
 Tasting should have:
 - date - time
