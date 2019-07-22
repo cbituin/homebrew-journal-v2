@@ -1,6 +1,6 @@
 ## Notes:
 
-Potential outlines for models and paths in Sinatra CRUD app.
+Initially planned to use project for simple Sinatra-based app. Revised to utilize for Rails project.
 
 ## User model
 
